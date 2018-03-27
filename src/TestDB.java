@@ -4,7 +4,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class TextDB {
+// DI SOLITO NON FAREMO COSI' MA AVREMO UN POSTO PRECISO IN CUI METTERE TUTTE QUESTE COSE (PATTERN DAO)
+
+public class TestDB {
 
 	public static void main(String[] args) {
 		
@@ -18,6 +20,8 @@ public class TextDB {
 			
 			// NAVETTA CHE TRASPORTERA' IL MESSAGGIO SQL
 			Statement st = conn.createStatement();
+			// ATTENZIONE: NOI PERO' QUESTO OGGETTO STATEMENT NON LO USIAMO MAI, TENDIAMO AD UTILIZZARE 
+			// IL PREPARED STATEMENT CHE CONTERRA' LA QUERY PIU' I PARAMETRI 
 			
 			// STRINGA CHE VOGLIO ESEGUIRE: COPIATA DA HEIDI
 			String sql = "SELECT nome,voto " + 
