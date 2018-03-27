@@ -26,7 +26,7 @@ public class TestDB {
 			// STRINGA CHE VOGLIO ESEGUIRE: COPIATA DA HEIDI
 			String sql = "SELECT nome,voto " + 
 					"FROM libretto " + 
-					"ORDER BY voto DESC";
+					"ORDER BY voto";
 			
 			// MECCANISMO PER OTTENERE IL RISULTATO DELLE QUERY
 			ResultSet res = st.executeQuery(sql);
